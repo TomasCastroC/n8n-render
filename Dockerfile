@@ -1,12 +1,10 @@
-FROM n8nio/n8n
+FROM n8nio/n8n:latest
 
-# Set working directory
+# Carpeta de trabajo dentro del contenedor
 WORKDIR /data
 
-# Copy custom files if needed
-# COPY . .
-
-# Expose default n8n port
+# Puerto de n8n
 EXPOSE 5678
 
+# Comando de inicio de n8n
 CMD ["n8n", "start"]

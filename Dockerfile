@@ -5,6 +5,3 @@ WORKDIR /data
 
 # Puerto de n8n
 EXPOSE 5678
-
-# Comando de inicio de n8n
-CMD ["n8n", "start"]
